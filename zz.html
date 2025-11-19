@@ -1,0 +1,158 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.5">
+<title>WHISY GALLERY</title>
+<link rel="stylesheet" href="zz.css">
+</head>
+<body>
+<header>
+<h1>Welcome to WHISY Art Gallery
+Uganda</h1>
+<nav>
+<div>
+<a href="#home">HOME</a>
+<a href="#exhibitions">Exhibition</a>
+<a href="#shop">SHOP</a>
+<a href="#contact">CONTACT</a>
+<br>
+
+</div>
+</nav>
+</header>
+<section id="home">
+<h2>Our Latest Exhibition</h2>
+<img src="超级截屏_20251029_230101.png"
+alt="Exhibition Image">
+<p>Discover the finest art pieces from
+contemporary artists in Uganda .</p>
+</section>
+<section id="greeting-section">
+<h3 id="greeting">Hello, welcome to the
+WHISY Gallery !</h3>
+<button onclick="changeGreeting()">Change
+Greeting</button>
+</section>
+<section class="Exhibition">
+    <h2>Gallery</h2>
+    <div class="artwork">
+    <img src="one.png" alt="Artwork 1">
+    <div class="artwork-info">
+    <p>$1200</p>
+    <button class="buy-button">Buy Now</button>
+    </div>
+    </div>
+    <div class="artwork">
+    <img src="two.png" alt="Artwork 2">
+    <div class="artwork-info">
+    <p>$850</p>
+    <button class="buy-button">Buy Now</button>
+    </div>
+    </div>
+    <div class="artwork">
+    <img src="three.png" alt="Artwork 3">
+    <div class="artwork-info">
+    <p>$2340</p>
+    <button class="buy-button">Buy Now</button>
+    </div>
+    </div>
+    <div class="artwork">
+    <img src="four.png" alt="Artwork 4">
+    <div class="artwork-info">
+    <p>$340</p>
+    <button class="buy-button">Buy Now</button>
+    </div>
+    </div>
+    </section>
+    <section class="SHOP">
+    <h2>Choose Your WHISY Artwork</h2>
+    <div class="selection-container">
+    <label for="artworkselection">Select
+    artwork :</label>
+    <select id="artworkselection">
+    <option value="Sunset
+    landscape-250000">Sunset Landscape -
+250,000</option>
+<option value="Abstract color
+play-200000">Abstract Color Play - 200,000</option>
+
+<option value="Forest
+serenity-150000">Forest Serenity - 150,000</option>
+</select>
+<button class="buy-button"
+id="buynow-button">Buy NOW</button>
+<button id="viewselectionButton"
+class="buy-button">View Selected Artworks</button>
+</div>
+</section>
+<section class="registration">
+<h2>Customer Registration Form</h2>
+<form id="submit" method="POST">
+<div class="form-group">
+<label for="name">Full Name</label>
+<input type="text" id="name"
+name="name" placeholder="Enter your full
+name" required>
+<div class="error" id="nameError"></div>
+
+</div>
+<div class="form-group">
+<label for="contact">Contact
+Number</label>
+<input type="tel" id="contact"
+name="contact" placeholder="Enter your contact
+number" required>
+<div class="error" id="contactError"></div>
+
+</div>
+<div class="form-group">
+<label>Gender</label>
+<input type="radio" id="gendermale"
+name="gender" value="Male" required> Male
+<input type="radio" id="genderFemale"
+name="gender" value="Female"
+Female>
+<div class="error" id="genderError"></div>
+    
+    </div>
+    <div class="form-group">
+    <label for="email">Email Address</label>
+    
+    <input type="email" id="email"name="email" placeholder-" Enter your email required">
+    <div class="error" id="ematlError"></div>
+    
+    </div>
+    <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message"
+    name="message" rows="5" cols="30"
+    required></textarea>
+    </div>
+    <input type="submit" value="Send">
+    </form>
+    <input type="reset" value="Clear">
+    </section>
+    <marquee behavior="scroll" direction="left"
+    scrollamount="10" class="marquee">
+    WHISY arts now open! Visit us or call us for
+    amazing artworks
+    </marquee>
+    <center>
+    <span>Our info: Call, message,
+WhatsApp us on 0751611833 / 0787565332,
+Mengo</span>
+</center>
+    <footer>
+    <p>&copy; 2025 WHISY GALLERY. All rights
+    reserved  MAYEGA ERIC..BAIT/25D/U/A0181   .</p>
+    </footer>
+    <script>
+    
+    function changeGreeting() {
+    document.getElementById('greeting').innerText =
+    "Explore our latest Exhibition!";}
+    </script>
+    </body>
+    </html>
